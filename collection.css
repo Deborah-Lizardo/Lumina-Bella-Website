@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pink-logo: #C64B74FF;
+    --pink-nav: #e96ca2;
+    --pink-button: #fe71c1;
+    --pink-sdw :  #75114a82;
+    --pink-hoover :#ff87c7;
+    --pink-border-img :#ffb8de;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4{
+    font-family: "Bodony Moda SC", serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+header {
+    background-color: var(--pink-logo);
+    width: auto;
+    font-weight: normal;
+    font-size: large;
+}
+
+header img {
+    height: 190px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    padding: 8px 35px ;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: var(--pink-nav);
+    border-radius: 30px;
+}
+
+.home-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-img img{
+    height: 12rem;
+}
+
+.estacao titulo{
+    margin-top: 3rem;
+}
+
+.estacao titulo h3 {
+    margin-top: 4rem;
+}
+
+.estacao titulo hr {
+    width: 29%;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.estacao titulo h2 {
+    font-size: 1.1rem;
+    display: inline-block;
+    font-style: italic;
+    padding: 0.1rem;
+}
+
+.collections {
+    text-align: center;
+    position: relative;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.estacao article{
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    color: black;
+}
+
+.estacao article img{
+    width: 45rem;
+    height: 37rem;
+    object-fit: c;
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.estacao article p {
+    text-align: justify;
+    font-family: Raleway, serif;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    max-width: 65rem;
+
+}
+
+.estacao article h3{
+margin-bottom: 2rem;
+margin-top: 3rem;
+font-weight: 400px;
+font-size: 22px;
+}
+
+.descricao{
+    width: 70rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 15px rgba(68, 18, 46, 0.51);
+    border: 1px #ff87c7 solid;
+    font-family: "Bodony Moda SC", serif;
+    font-weight: normal;
+}
+
+.products {
+    margin-top: 3rem;
+}
+
+
+.produtos-estacoes{
+    position: relative;
+    padding: 10 10rem;
+    border-radius: 3rem;
+    margin-right: 2rem;
+    box-shadow: 0 0 20px var(--pink-sdw);
+    max-width: 1200px;
+    margin-bottom: 5rem;
+}
+
+.produtos-estacoes img:hover{
+    box-shadow: 0 0 15px rgba(68, 18, 46, 0.51);
+    border: 1px #ff87c7 solid;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.produtos-estacoes h3{
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.produtos-estacoes img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 30%;
+    margin-top: 3rem;
+}
+
+.produtos-estacoes {
+    transform: translateY(-10px);
+}
+
+.produtos-estacoes h4{
+    margin-top: 1rem;
+}
+
+.produtos-estacoes button{
+    font-family: Raleway, serif;
+    text-decoration: none;
+    font-size: 23px;
+    font-style: italic;
+    color: white;
+    background-color: var(--pink-button);
+    border: 3px solid var(--pink-sdw);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    padding: 8px;
+    margin-bottom: 2rem;
+}
+
+.newsletter-form {
+    background-color: var(--pink-logo);
+    padding: 25px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    box-sizing: border-box; 
+    margin: 0 auto;
+}
+
+.newsletter-form label {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.newsletter-form input {
+    padding: 7px;
+    border: 1px solid #ccc;
+    margin-right: 25px; 
+    font-family: "Raleway", serif;
+    font-size: 15px;
+}
+
+.newsletter-form button {
+    background-color: white;
+    border: 1px solid #ccc;
+    color: gray;
+    cursor: pointer;
+    font-family: "Raleway", serif;
+    font-size: 15px;
+    height: 35px;
+    width: 150px;
+}
+
+footer {
+    background-color: var(--pink-logo);
+    width: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+}
+
+.footer-info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.footer-info p {
+    display: inline;
+    color: white;
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.footer-text-p{
+    margin-bottom: 10px
+}
+
+.footer-text h4{
+    font-family: "Bodoni Moda SC", serif;
+    color: white;
+    text-decoration: none;
+}
+
+.img-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-info p {
+    font-family: "Raleway", serif;
+    color: white;
+}
+
+.img-info img {
+    max-height: 4rem;
+    margin-right: 2rem;
+}
+
+.imagens-texto {
+    display: flex;
+    justify-content: center;
+}
